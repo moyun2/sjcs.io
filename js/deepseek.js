@@ -10,7 +10,7 @@ async function sendMessage() {
     
     try {
         // 调用DeepSeek API
-        const response = await fetch('https://cors-anywhere.herokuapp.com/https://api.deepseek.com/v1/chat/completions', {
+        const response = await fetch(API_URL, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
