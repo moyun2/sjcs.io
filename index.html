@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的第一个 GitHub Pages 网页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f8ff;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>欢迎来到我的 GitHub Pages 网页！</h1>
+        <p>这是一个简单的测试页面，用于验证是否可以成功部署到 GitHub Pages。</p>
+        <button onclick="showMessage()">点击我</button>
+        <div id="message"></div>
+    </div>
+
+    <script>
+        function showMessage() {
+            const messageDiv = document.getElementById('message');
+            messageDiv.innerHTML = '<p>恭喜！你的网页已经成功部署到 GitHub Pages！</p>';
+            messageDiv.style.color = 'green';
+        }
+    </script>
+</body>
+</html>
